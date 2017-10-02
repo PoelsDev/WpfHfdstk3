@@ -5,8 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfProjectTests"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="350" Width="500">
+    <Canvas x:Name="mijnCanvas" Margin="0,0,0,0">
+        <Canvas.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FFA607C9" Offset="1"/>
+            </LinearGradientBrush>
+        </Canvas.Background>
+        <Button x:Name="knop1" Content="Button" Height="39" Canvas.Left="359" Canvas.Top="55" Width="78" Background="Black" Foreground="#FF9700FF" BorderBrush="#FFA303FF" Click="knop1_Click"/>
+        <Button x:Name="knop2" Content="Button" Height="43" Canvas.Left="359" Canvas.Top="110" Width="78" MouseEnter="knop2_MouseEnter" Foreground="#FF9700FF" Background="Black" BorderBrush="#FFAE00FF"/>
+        <Button x:Name="knop3" Content="Button" Height="47" Canvas.Left="359" Canvas.Top="158" Width="78" Foreground="#FF9700FF" BorderBrush="#FFA200FF" Background="Black" Click="knop3_Click"/>
+        <Rectangle Canvas.Left="46" Stroke="#FFB900FF" Canvas.Top="55" Width="261" Height="192">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFCE04FB" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Ellipse Height="58" Canvas.Left="148" Stroke="#FFB900FF" Canvas.Top="129" Width="60">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFCE04FB" Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Rectangle x:Name="mijnRechthoek" Height="43" Canvas.Left="148" Stroke="#FFB900FF" Canvas.Top="68" Width="60">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFCE04FB" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="knop4" Content="Button" Height="43" Canvas.Left="359" Canvas.Top="210" Width="78" Background="Black" Foreground="#FFA200FF" BorderBrush="#FFAE00FF" Click="knop4_Click"/>
+        <Button x:Name="button" Content="Button" Height="36" Canvas.Left="359" Canvas.Top="258" Width="78" Background="Black" Foreground="#FFB609F7" BorderBrush="#FF9700FF"/>
+
+    </Canvas>
 </Window>
